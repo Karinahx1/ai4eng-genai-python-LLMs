@@ -1,0 +1,13 @@
+El Problema:
+
+Tienes un DataFrame con variables numéricas y una variable objetivo continua. Sospechas que la relación entre las variables y la salida no es completamente lineal.
+
+Tu Misión: Escribe una función llamada ajustar_regresion_polinomica(df, target_col, grado) que realice lo siguiente:
+
+- Separe las características (X) de la variable objetivo (y, especificada por target_col).
+- Genere nuevas características polinómicas usando PolynomialFeatures de sklearn con include_bias=False.
+- Entrene un modelo LinearRegression.
+- Calcule las predicciones sobre los mismos datos de entrada.
+- Devuelva una tupla con:
+    - un array de numpy con las predicciones,
+    - un array de numpy con los coeficientes del modelo.

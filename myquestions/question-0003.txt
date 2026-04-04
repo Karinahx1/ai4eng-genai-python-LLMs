@@ -1,0 +1,10 @@
+El Problema:
+
+Tienes un DataFrame que puede contener filas duplicadas y variables numéricas en distintas escalas. Antes de usarlo en un análisis, quieres limpiar los duplicados y dejar las variables numéricas estandarizadas.
+
+Tu Misión: Escribe una función llamada limpiar_duplicados_y_estandarizar(df) que realice lo siguiente:
+
+- Elimine las filas duplicadas del DataFrame, conservando solo la primera aparición.
+- Seleccione únicamente las columnas numéricas del DataFrame resultante.
+- Estandarice esas columnas usando StandardScaler de sklearn.
+- Devuelva un DataFrame de pandas con las columnas numéricas estandarizadas, conservando los nombres de las columnas y con el índice reiniciado.

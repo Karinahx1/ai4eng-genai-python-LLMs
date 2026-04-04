@@ -1,0 +1,10 @@
+El Problema:
+
+Tienes un DataFrame con múltiples variables numéricas. Algunas variables tienen muy poca variabilidad y aportan poca información para el análisis.
+
+Tu Misión: Escribe una función llamada eliminar_baja_varianza(df, umbral) que realice lo siguiente:
+
+- Seleccione únicamente las columnas numéricas del DataFrame.
+- Aplique VarianceThreshold de sklearn con el umbral indicado.
+- Seleccione solo las columnas que superen ese umbral de varianza.
+- Devuelva un DataFrame de pandas con las columnas seleccionadas, conservando los nombres de las columnas y con el índice original.

@@ -1,0 +1,13 @@
+El Problema:
+
+Tienes un DataFrame con registros de ventas diarias y quieres resumir las ventas por mes para estudiar su tendencia.
+
+Tu Misión: Escribe una función llamada resumir_ventas_y_tendencia(df) que realice lo siguiente:
+
+- Convierta la columna fecha a tipo datetime.
+- Agrupe los datos por mes y calcule la suma de la columna ventas.
+- Cree una variable numérica que represente el orden de los meses empezando en 0.
+- Ajuste un modelo LinearRegression de sklearn usando el número de mes como variable de entrada y las ventas mensuales como variable objetivo.
+- Devuelva una tupla con:
+    - un DataFrame con las columnas mes y ventas,
+    - un float con la pendiente del modelo de regresión.
